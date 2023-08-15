@@ -17,15 +17,15 @@ class Game {
   }
 
   registerEvents() {
-  	document.addEventListener('keydown', (event) => {
-  		const pressedKey = event.key.toLowerCase();
-
-  		if (this.currentSymbol.textContent.toLowerCase() === pressedKey) {
-  			this.success();
-  		} else {
-  			this.fail();
-  		}
-  	});
+    document.addEventListener('keydown', (event) => {
+      const pressedKey = event.key.toLowerCase();
+  
+      if (this.currentSymbol.textContent.toLowerCase() === pressedKey) {
+        this.success();
+      } else {
+        this.fail();
+      }
+    });
   }
 
   success() {
