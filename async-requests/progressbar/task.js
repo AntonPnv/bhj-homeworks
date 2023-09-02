@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		// Устанавливаем обработчик события для загрузки
 		xhr.upload.addEventListener('progress', (event) => {
 			if (event.lengthComputable) {
-				const percent = (event.loaded / event.total) * 100; // Вычисляем процент загрузки
+				const percent = (event.loaded / event.total); // Вычисляем процент загрузки
 				progress.value = percent; // Обновляем значения progress
 			}
 		});
